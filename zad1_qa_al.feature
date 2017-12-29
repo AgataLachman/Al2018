@@ -10,11 +10,11 @@ Scenario:
 		
 		Examples:
  
-        | login				| correct-password	|
+        | login			| correct-password	|
 
         | Agata@email.pl	| 123456         	|
 
-        | Joe@email.pl      | qwerty         	|	
+        | Joe@email.pl      	| qwerty         	|	
 		
 		
 		
@@ -30,11 +30,11 @@ Feature: Log in from application with incorrect password
 			 
 	Examples:
  
-        | login				| incorrect-password	|
+        | login		| incorrect-password	|
 
-        | Agata@email.pl    | 123447				|
+        | Agata@email.pl| 123447		|
 
-        | Joe@email.pl      | qwertu         		|	
+        | Joe@email.pl	| qwertu         	|	
 		
 		
 		
@@ -50,11 +50,11 @@ Feature: Log in from application with non-existent login
 			 
 	Examples:
  
-        | login					| correct-password	|
+        | login			| correct-password	|
 
-        | Agata12@email.pl		| 123456        	|
+        | Agata12@email.pl	| 123456        	|
 
-        | Joe12@email.pl		| qwerty         	|	
+        | Joe12@email.pl	| qwerty         	|	
 		
 		
 		
@@ -69,11 +69,11 @@ Feature: Registration in the application
 		Then Registration is completed
 	Examples:
  
-        | new-login			| new-password	|
+        | new-login		| new-password	|
 
-        | user3@email.pl    | 123456        |
+        | user3@email.pl    	| 123456        |
 
-        | user4@email.pl    | qwerty		|				 
+        | user4@email.pl    	| qwerty	|				 
 
 		
 		
@@ -107,7 +107,7 @@ Feature: Registration in the application with too long login
 		
 	Examples:
  
-        | new-login														| new-password	|
+        | new-login							| new-password	|
 
         | user12345689012345678901234567890123456789012345789023456780	|	123456		|
 
